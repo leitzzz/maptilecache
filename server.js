@@ -4,7 +4,7 @@ const axios = require('axios').default;
 const fs = require('fs');
 
 const EXPRESS_SERVER_PORT = 80;
-const MAPQUEST_KEY = ''; // here put your own key
+const MAPQUEST_KEY = ''; // use your own mapquest key here
 
 app.get('/', (req, res) => {
    res.send("Hello, provide a valid URL!");

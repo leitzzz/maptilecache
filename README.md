@@ -1,4 +1,6 @@
-Local map tile cache, tries to request the image map tile and storages locally. Tested on Ubuntu 22.04 LTS
+Local map tile cache, tries to request the image map tile and storages locally to avoid making multiple requests to map tiles server like Openstret maps. Tested on Ubuntu 22.04 LTS.
+
+Please!!! note that each map tile provider haves its own legal usage policies, please enter to each web page provider to validate this.
 
 Installation:
 
@@ -16,6 +18,10 @@ In "areas/" directory are saved the tiles, optionally you can run a cron script 
 /usr/bin/rm ...your_path/maptilecache/areas/gmaps/osm/*
 
 If you want to make the script running permanently you must use some package like pm2.
+
+This script can be used with Leaflet Maps, using this tile format:
+
+http://x.x.x.x/osm?z={z}&x={x}&y={z}
 
 Any suggestion make it!
 

@@ -13,6 +13,8 @@ app.get('/', (req, res) => {
 // demo request: 
 // http://x.x.x.x/osm?z=7&x=28&y=55
 // https://tile.openstreetmap.org/7/28/55.png
+// you can use Laflet using this tile format:
+// http://x.x.x.x/osm?z={z}&x={x}&y={z}
 app.get("/osm", async (request, response) => {
    // if no exists locally, request the map tile remotely
    if (!fs.existsSync('./areas/osm/' + request.query.z + '_' + request.query.x + '_' + request.query.y + '.png')) {
